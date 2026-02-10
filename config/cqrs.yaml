@@ -1,0 +1,9 @@
+cqrs:
+  command_bus: ~
+  query_bus: ~
+  enforce:
+    single_handler: true
+    command_returns_void: true
+    query_returns_value: true
+  idempotency:
+    enabled:

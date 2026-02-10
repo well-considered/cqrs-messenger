@@ -1,0 +1,35 @@
+{
+    "name": "well-considered/cqrs-messenger",
+    "type": "library",
+    "license": "MIT",
+    "description": "Symfony Messenger adapter enforcing CQRS semantics.",
+    "autoload": {
+        "psr-4": {
+            "WellConsidered\\CqrsMessenger\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\WellConsidered\\CqrsMessenger\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Nemanja Cucurević",
+            "email": "nemanjac85@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^8.2",
+        "well-considered/cqrs": "0.0.*",
+        "symfony/messenger": "^6.4 || ^7.0 || ^8.0",
+        "symfony/dependency-injection": "^6.4 || ^7.0 || ^8.0",
+        "symfony/config": "^6.4 || ^7.0 || ^8.0",
+        "symfony/http-kernel": "^6.4 || ^7.0 || ^8.0",
+        "symfony/console": "^6.4 || ^7.0 || ^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^13.0"
+    }
+}
